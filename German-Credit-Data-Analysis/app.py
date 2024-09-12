@@ -7,6 +7,7 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_selection import chi2, f_classif, mutual_info_classif
 from scipy.stats import pointbiserialr
+import path
 
 def show_summary(df):
     # Extract summary information manually
