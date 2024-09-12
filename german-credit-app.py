@@ -7,7 +7,6 @@ from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.preprocessing import LabelEncoder
 from sklearn.feature_selection import chi2, f_classif, mutual_info_classif
 from scipy.stats import pointbiserialr
-import path
 
 def show_summary(df):
     # Extract summary information manually
@@ -269,9 +268,6 @@ def show_feat_impt(df, columns, method):
 st.title("German Credit Risk Analysis and Modeling")
 
 st.header("Data",divider=True)
-
-dir = path.Path(__file__).abspath()
-sys.path.append(dir.parent.parent)
 
 df = pd.read_csv("German-Credit-Data-Analysis\Credit-Data-Raw.csv")
 st.dataframe(df, use_container_width=True)
