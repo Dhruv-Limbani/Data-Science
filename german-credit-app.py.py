@@ -271,9 +271,9 @@ st.title("German Credit Risk Analysis and Modeling")
 st.header("Data",divider=True)
 
 dir = path.Path(__file__).abspath()
-sys.append.path(dir.parent.parent)
+sys.path.append(dir.parent.parent)
 
-df = pd.read_csv("Credit-Data-Raw.csv")
+df = pd.read_csv("German-Credit-Data-Analysis\Credit-Data-Raw.csv")
 st.dataframe(df, use_container_width=True)
 
 numerical_columns = df.select_dtypes(include=['int64', 'float64']).columns
