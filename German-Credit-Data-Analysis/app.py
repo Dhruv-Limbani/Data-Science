@@ -268,6 +268,10 @@ def show_feat_impt(df, columns, method):
 st.title("German Credit Risk Analysis and Modeling")
 
 st.header("Data",divider=True)
+
+dir = path.Path(__file__).abspath()
+sys.append.path(dir.parent.parent)
+
 df = pd.read_csv("Credit-Data-Raw.csv")
 st.dataframe(df, use_container_width=True)
 
